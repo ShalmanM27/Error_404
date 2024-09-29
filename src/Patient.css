@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.patient-dashboard {
+    width: 90%;
+    margin-top: 590px; /* Adjusted margin for a more balanced appearance */
+    max-width: 800px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.patient-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #2b2b2b;
+    text-transform: uppercase;
+}
+
+.error-message {
+    color: #dc3545;
+    font-size: 1rem;
+    margin-bottom: 10px;
+}
+
+.records-container,
+.access-container {
+    margin-bottom: 30px;
+    text-align: left;
+}
+
+.record-list {
+    list-style: none;
+    padding: 0;
+}
+
+.record-item {
+    background-color: #f8f9fa;
+    padding: 15px;
+    margin-bottom: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+    text-align: center;
+}
+
+.record-item p {
+    margin: 5px 0;
+}
+
+.record-image {
+    width: 100px; /* Adjust the width based on your preference */
+    height: auto;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    cursor: pointer; /* Change cursor to pointer on hover */
+}
+
+.input-doctor-address,
+.input-record-hash,
+.input-description {
+    width: 100%;
+    padding: 12px;
+    margin: 10px 0;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: border-color 0.3s;
+}
+
+.input-doctor-address:focus,
+.input-record-hash:focus,
+.input-description:focus {
+    border-color: #007bff;
+    outline: none;
+}
+
+button {
+    width: 100%;
+    padding: 12px;
+    font-size: 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 10px;
+    color: white;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.button-grant {
+    background-color: #28a745;
+}
+
+.button-revoke {
+    background-color: #dc3545;
+}
+
+.button-upload {
+    background-color: #007bff;
+}
+
+button:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 600px) {
+    .patient-title {
+        font-size: 2rem;
+    }
+    
+    .section-title {
+        font-size: 1.5rem;
+    }
+    
+    .input-doctor-address,
+    .input-record-hash,
+    .input-description,
+    button {
+        font-size: 0.9rem;
+    }
+}
+
+.section-title {
+    font-size: 1.75rem;
+    margin-bottom: 10px;
+    color: #444;
+    display: inline-block;
+    padding-bottom: 5px;
+    background-color: rgba(0, 123, 255, 0.1);
+    border-radius: 5px;
+    text-transform: uppercase;
+    padding: 10px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s;
+}
+
+.section-title:hover {
+    background-color: rgba(0, 123, 255, 0.2);
+}
+
+/* Modal Styles */
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.modal-content {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.close-button {
+    font-size: 1.5rem;
+    color: #dc3545;
+    cursor: pointer;
+    position: absolute;
+    top: 10px;
+    right: 15px;
+}
+
+.modal-image {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}

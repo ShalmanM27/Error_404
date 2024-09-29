@@ -1,0 +1,123 @@
+/* Global Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Light gradient background */
+body {
+    background: linear-gradient(to bottom right, #f0f8ff, #e0f7fa);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: 'Poppins', sans-serif;
+    color: #0c5460;
+}
+
+/* Main container to center the glassy content */
+.main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+/* Glassy effect container with hover and animation */
+.glassy-box-with-hover {
+    background: rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    padding: 40px;
+    width: 100%;
+    max-width: 450px;
+    text-align: center;
+    color: #0c5460;
+    border: 1px solid rgba(255, 255, 255, 0.4);
+    box-shadow: 0 8px 32px rgba(0, 123, 255, 0.2);
+    transition: all 0.4s ease;
+    animation: fadeIn 1.2s ease;
+    overflow: hidden; /* Ensures smooth transitions */
+}
+
+/* Hover effect with animation */
+.glassy-box-with-hover:hover {
+    transform: translateY(-10px) scale(1.03);
+    box-shadow: 0 12px 36px rgba(0, 123, 255, 0.3);
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(20px);
+}
+
+/* Login title styling */
+.login-title {
+    font-size: 2.2rem;
+    font-weight: bold;
+    color: #1a73e8;
+    text-shadow: 0 2px 4px rgba(0, 123, 255, 0.2);
+    margin-bottom: 10px;
+}
+
+/* Description */
+.login-description {
+    font-size: 1.1rem;
+    color: #3c4043;
+    margin-bottom: 30px;
+}
+
+/* Connect wallet button with glassy effect and animation */
+.connect-button {
+    background: rgba(26, 115, 232, 0.85); 
+    border: none;
+    padding: 12px 25px;
+    font-size: 1rem;
+    border-radius: 30px;
+    cursor: pointer;
+    color: white;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(26, 115, 232, 0.2);
+}
+
+/* Button hover effect with subtle animation */
+.connect-button:hover {
+    background: rgba(21, 101, 192, 0.85); 
+    transform: translateY(-5px); 
+    box-shadow: 0 6px 15px rgba(26, 115, 232, 0.3);
+    animation: pulse 0.5s ease-in-out infinite alternate; 
+}
+
+/* Pulse animation for button hover */
+@keyframes pulse {
+    from {
+        transform: translateY(-5px) scale(1);
+    }
+    to {
+        transform: translateY(-7px) scale(1.05); 
+    }
+}
+
+/* Fade-in animation */
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive design */
+@media (max-width: 768px) {
+    .glassy-box-with-hover {
+        padding: 20px;
+        width: 90%;
+    }
+
+    .login-title {
+        font-size: 2rem;
+    }
+}

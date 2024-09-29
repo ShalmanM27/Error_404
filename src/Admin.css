@@ -1,0 +1,201 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #F4F4F4; /* Light Gray */
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+
+
+.admin-heading {
+  font-size: 2.5rem; /* Large font size for prominence */
+  color: #008E97; /* Dark Teal */
+  text-align: center; /* Center the heading */
+  margin-bottom: 20px; /* Space below the heading */
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.2); /* Subtle shadow effect */
+  font-family: 'Arial', sans-serif; /* Custom font */
+  letter-spacing: 1px; /* Slight spacing between letters */
+}
+
+.extra-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  max-width: 800px; /* Limits the maximum width */
+  margin: 0 auto; /* Centers the outer container horizontally */
+  background: rgba(255, 255, 255, 0.05);
+border-radius: 16px;
+box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+backdrop-filter: blur(2.3px);
+-webkit-backdrop-filter: blur(2.3px);
+border: 1px solid rgba(255, 255, 255, 0.3); /* Sky Blue with some transparency */
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  backdrop-filter: blur(0px);
+  -webkit-backdrop-filter: blur(0px);
+  border-radius: 10px;
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 30px; /* Reduced padding for a tighter layout */
+  margin-top: 1300px;
+}
+
+.container {
+  width: 1000px;
+  max-width: 100%; /* Ensures the container doesn't overflow its parent */
+  padding: 20px;
+  padding-left: 45px;
+  padding-right: 45px;
+
+
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.add-doctor-container {
+  background-color: #e0f7fa; /* Mild Light Blue */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px; /* Space below this section */
+  
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-bottom: 30px;
+}
+
+input[type="text"],
+input[type="number"] {
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  transition: border-color 0.3s;
+}
+
+input[type="text"]:focus,
+input[type="number"]:focus {
+  border-color: #003B2D; /* Dark Teal */
+  outline: none;
+}
+
+button {
+  padding: 10px 15px;
+  background-color: #6a8eae; /* Bright Orange */
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+button:hover {
+  background-color: #9bd1e5; /* Darker Orange for hover effect */
+}
+
+ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+li {
+  background: #f9f9f9;
+  margin: 10px 0;
+  padding: 15px;
+  border-radius: 4px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+li:hover {
+  background: #f1f1f1;
+}
+.navbar {
+  position: absolute; /* Position the navbar absolutely */
+  top: 0; /* Stick to the top */
+  left: 0; /* Align to the left */
+  width: 100%; /* Full width */
+  background-color: #57a773; /* Indigo for the navbar background */
+  padding: 10px 0; /* Padding for top and bottom */
+  z-index: 1000; /* Ensure it stays on top */
+}
+
+.navbar ul {
+  list-style: none; /* Remove default list styling */
+  display: flex; /* Use flexbox for horizontal alignment */
+  justify-content: center; /* Center the items */
+}
+
+.navbar li {
+  margin: 0 20px; /* Add some space between items */
+  color: #157145; /* Gold color for better contrast */
+  cursor: pointer; /* Pointer cursor on hover */
+  font-weight: bold; /* Make text bold */
+}
+
+.navbar li:hover {
+  color: #FF4500; /* Change to Orange Red on hover */
+}
+
+.subheading-container {
+  background-color: #A1D9E8; /* Sky Blue */
+  padding: 15px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  margin: 20px 0; /* Space above and below the container */
+}
+
+.subheading-container h2 {
+  color: #003B2D; /* Dark Teal for the text */
+  margin: 0; /* Remove default margin */
+}
+
+
+.section-container {
+  background-color: #A1D9E8; /* Sky Blue */
+  padding: 15px; /* Padding around the content */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
+  margin: 30px 0; /* Space above and below the container */
+}
+
+.section-container h2 {
+  color: #00796b; /* Dark Teal for the subheading */
+  margin: 0; /* Remove default margin */
+  padding-bottom: 10px; /* Space below the subheading */
+  font-weight: bold; /* Make subheading bold */
+}
+
+.add-doctor-container {
+  margin-top: 20px; /* Space above each content section */
+}
+
+/* You can add specific colors for each subheading if needed */
+.add-doctor-container h2 {
+  color: #6A5ACD; /* Color for Add Doctor section */
+}
+
+.register-patient-container h2 {
+  color: #FF6347; /* Color for Register Patient section */
+}
+
+.upload-record-container h2 {
+  color: #FFD700; /* Color for Upload Patient Record section */
+}
+
+.delete-doctor-container h2 {
+  color: #FF4500; /* Color for Delete Doctor section */
+}
+
+.doctors-list-container h2 {
+  color: #4682B4; /* Color for Doctors List section */
+}
